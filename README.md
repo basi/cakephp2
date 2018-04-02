@@ -15,5 +15,5 @@ $ docker-compose up
 
 ## container
 ```
-$ docker exec -it docker_cakephp2_web_1 /bin/bash
+$ docker exec -it dockercakephp2_web_1 /bin/bash
 ```
