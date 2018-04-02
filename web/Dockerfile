@@ -10,4 +10,8 @@ RUN echo ServerName $HOSTNAME > /etc/apache2/conf-available/fqdn.conf && a2encon
 RUN a2enmod headers
 RUN a2enmod include
 
+COPY ./apache2.conf /etc/apache2/apache2.conf
+
+COPY ./localhost.conf /etc/apache2/sites-available/000-default.conf
+
 COPY ./php.ini /usr/local/etc/php/
